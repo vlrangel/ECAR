@@ -313,7 +313,7 @@
         </trans-unit>
         <trans-unit id="Report 4132321502 - NamedType 3259128960" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT Base</source>
-          <target state="needs-translation"/>
+          <target>Base imponible</target>
           <note from="Developer" annotates="general" priority="2">ESP="Base imponible"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Sales - Credit Memo - NamedType VATBaseLbl</note>
         </trans-unit>
@@ -331,7 +331,7 @@
         </trans-unit>
         <trans-unit id="Report 4132321502 - NamedType 1071970054" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT</source>
-          <target state="needs-translation"/>
+          <target>IVA</target>
           <note from="Developer" annotates="general" priority="2">ESP="IVA"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Sales - Credit Memo - NamedType VATIdentifierLbl</note>
         </trans-unit>

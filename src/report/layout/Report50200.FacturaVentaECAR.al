@@ -834,7 +834,9 @@ report 50200 "Factura Venta -ECAR"
                 }
                 column(VATPct_VatAmountLine; "VAT %")
                 {
-                    DecimalPlaces = 0 : 5;
+                    // DecimalPlaces = 0 : 0;
+                    //  AutoFormatType = 10;
+                    // AutoFormatExpression = '<precision, 0:2><standard format,0>%';
                 }
                 column(VATPct_VatAmountLine_Lbl; FieldCaption("VAT %"))
                 {

@@ -447,6 +447,7 @@ report 50201 "Sales - Credit Memo"
                 DataItemLink = "Document No." = field("No.");
                 DataItemLinkReference = Header;
                 DataItemTableView = sorting("Document No.", "Line No.");
+
                 column(LineNo_Line; "Line No.")
                 {
                 }
@@ -705,6 +706,9 @@ report 50201 "Sales - Credit Memo"
             {
                 DataItemTableView = sorting("VAT Identifier", "VAT Calculation Type", "Tax Group Code", "Use Tax", Positive);
                 UseTemporary = true;
+                column(TotalAmountIncludingVAT; Format(TotalAmountInclVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
+                {
+                }
                 column(InvoiceDiscountAmount_VATAmountLine; "Invoice Discount Amount")
                 {
                     AutoFormatExpression = Header."Currency Code";
@@ -913,9 +917,9 @@ report 50201 "Sales - Credit Memo"
                 column(TotalVATBaseLCY; TotalVATBaseLCY)
                 {
                 }
-                column(TotalAmountIncludingVAT; Format(TotalAmountInclVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
-                {
-                }
+                // column(TotalAmountIncludingVAT; Format(TotalAmountInclVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
+                // {
+                // }
                 column(TotalVATAmount; Format(TotalAmountVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
                 {
                 }
