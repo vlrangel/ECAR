@@ -26,7 +26,7 @@ using System.Globalization;
 using System.Text;
 using System.Utilities;
 
-report 50201 "Sales - Credit Memo"
+report 50201 "Venta Abono ECAR"
 {
     Caption = 'Sales - Credit Memo';
     DefaultRenderingLayout = "AbonoVenta.rdlc";
