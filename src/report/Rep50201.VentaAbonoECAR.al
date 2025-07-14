@@ -1060,7 +1060,7 @@ report 50201 "Venta Abono ECAR"
         layout("AbonoVenta.rdlc")
         {
             Type = RDLC;
-            LayoutFile = '.src/report/layout/AbonoVenta.rdlc';
+            LayoutFile = './layout/AbonoVenta.rdlc';
             Caption = 'Standard Sales Credit Memo (RDLC)';
             Summary = 'The Standard Sales Credit Memo (RDLC) provides a detailed layout.';
         }

@@ -1279,7 +1279,7 @@ report 50200 "Factura Venta -ECAR"
         layout("FacturaVentaECar.rdlc")
         {
             Type = RDLC;
-            LayoutFile = '.src/report/layout/FacturaVentaECar.rdlc';
+            LayoutFile = './layout/FacturaVentaECar.rdlc';
             Caption = 'Standard Sales Invoice (RDLC)';
             Summary = 'The Standard Sales Invoice (RDLC) is the most detailed layout and provides most flexible layout options.';
         }
