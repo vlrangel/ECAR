@@ -1,6 +1,8 @@
 table 50201 Modelo
 {
     DataClassification = ToBeClassified;
+    DrillDownPageId = Modelo;
+    LookupPageId = Modelo;
 
     fields
     {

@@ -1,6 +1,8 @@
 table 50200 Marca
 {
     DataClassification = ToBeClassified;
+    DrillDownPageId = Marca;
+    LookupPageId = Marca;
 
     fields
     {
