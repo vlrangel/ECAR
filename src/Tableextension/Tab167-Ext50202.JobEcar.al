@@ -43,6 +43,11 @@ tableextension 50202 JobEcar extends Job // 167
             DataClassification = ToBeClassified;
             Caption = 'End date of preparation', comment = 'ESP="Fecha fin Preparacion"';
         }
+        field(50205; "Origen del Vehiculo"; code[20])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Origen del Vehiculo".Code;
+        }
     }
 
     keys

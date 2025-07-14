@@ -25,6 +25,11 @@ pageextension 50203 JobCard extends "Job Card" //88
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Modelo field.', Comment = '%';
             }
+            field("Origen del Vehiculo"; Rec."Origen del Vehiculo")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Origen del Vehiculo field.', Comment = '%';
+            }
         }
         addbefore("Job Posting Group")
         {

@@ -21,6 +21,11 @@ pageextension 50200 JobList extends "Job List" //89
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Modelo field.', Comment = '%';
             }
+            field("Origen del Vehiculo"; Rec."Origen del Vehiculo")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Origen del Vehiculo field.', Comment = '%';
+            }
             field("Estado Proyecto"; Rec."Estado Proyecto")
             {
                 ApplicationArea = All;
