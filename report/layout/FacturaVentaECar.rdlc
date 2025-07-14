@@ -767,10 +767,13 @@
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
+                                        <Format>n2</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>VATPct_VatAmountLine</rd:DefaultName>
@@ -782,6 +785,7 @@
                                 <PaddingRight>5pt</PaddingRight>
                               </Style>
                             </Textbox>
+                            <rd:Selected>true</rd:Selected>
                           </CellContents>
                         </TablixCell>
                         <TablixCell>
@@ -801,7 +805,7 @@
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
-                                    <TextAlign>Right</TextAlign>
+                                    <TextAlign>Center</TextAlign>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
@@ -825,10 +829,11 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value />
+                                      <Value>=Fields!RemainingAmount.Value</Value>
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
+                                        <Format>n2</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -838,6 +843,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox142</rd:DefaultName>
+                              <Visibility>
+                                <Hidden>=Fields!NoOfVATIdentifiers.Value &lt; 1</Hidden>
+                              </Visibility>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -964,11 +972,12 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=SUM(Fields!Amount_ReportTotalsLine.Value)</Value>
+                                      <Value>=Fields!RemainingAmount.Value</Value>
                                       <Style>
                                         <FontFamily>Segoe UI</FontFamily>
                                         <FontSize>8pt</FontSize>
-                                        <Format>=Fields!VATAmount_VatAmountLineFormat.Value</Format>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>n2</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -986,7 +995,6 @@
                                 <PaddingRight>5pt</PaddingRight>
                               </Style>
                             </Textbox>
-                            <rd:Selected>true</rd:Selected>
                           </CellContents>
                         </TablixCell>
                       </TablixCells>
